@@ -24,6 +24,7 @@ public class Group {
     }
 
     public void setMembers(List<String> members) {
+
         this.members = members;
     }
 

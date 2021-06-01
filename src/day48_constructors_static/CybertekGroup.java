@@ -1,7 +1,5 @@
 package day48_constructors_static;
 
-import day41_arraylist.ArrayAsList;
-
 import java.util.*;
 
 public class CybertekGroup {
@@ -23,15 +21,21 @@ public class CybertekGroup {
         System.out.println("group1 = " + group1);
 
         Group group2 = new Group("CyberCats");
-        group2.setMembers(Arrays.asList("Stephan","Wakshum","Akrem","Andreea","Andrei"));
+        group2.setMembers(Arrays.asList("Stephan", "Wakshum", "Akrem", "Andreea", "Andrei"));
         //print all members. not toString()
         System.out.println("group2 members = " + group2.getMembers());
         //use if statement to check if Akrem is in the group2
-         if (group2.getMembers().contains("Akrem")){
-             System.out.println("Akrem is a member of group2");
-         }else{
-             System.out.println("Akrem is not in group2");
-         }
+        if (group2.getMembers().contains("Akrem")) {
+            System.out.println("Akrem is a member of group2");
+        } else {
+            System.out.println("Akrem is not in group2");
+        }
+
+        //remove some members from group1
+
+        group1.removeMember("Pavel");
+        group1.removeMember("Elvin");
+        System.out.println("group1 = " + group1);
 
     }
 }
