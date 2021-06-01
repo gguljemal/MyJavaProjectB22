@@ -7,7 +7,7 @@ public class Group {
     private String name;
     private List<String> members = new ArrayList<>();
 
-    public Group(String name){
+    public Group(String name) {
         this.name = name;
     }
 
@@ -35,11 +35,11 @@ public class Group {
                 '}';
     }
 
-    public void addMember(String newMember){
+    public void addMember(String newMember) {
         members.add(newMember);
     }
 
-    public void removeMember(String memberName){
+    public void removeMember(String memberName) {
         members.remove(memberName);
     }
 }
