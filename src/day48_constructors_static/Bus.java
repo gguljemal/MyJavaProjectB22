@@ -4,4 +4,12 @@ public class Bus {
 
     Driver driver;
     Engine engine;
+
+    @Override
+    public String toString() {
+        return "Bus{" +
+                "driver=" + driver +
+                ", engine=" + engine +
+                '}';
+    }
 }
