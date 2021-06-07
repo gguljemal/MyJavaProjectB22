@@ -7,9 +7,10 @@ import java.util.List;
 public class StaticBlockDemo {
 
     static int num;
-    static List<String>carModels;
+    static List<String> carModels;
 
     static {
+
         System.out.println("static initializer block");
         num = 10;
         carModels = new ArrayList<>();
@@ -79,9 +80,19 @@ public class StaticBlockDemo {
                 "Volvo"));
     }
 
+    {  //initializer block -> runs each time object created, before constructor
+        System.out.println("Initializer block");
+
+    }
+
     public StaticBlockDemo() {
         System.out.println("constructor method");
         num += 5;
+    }
+
+    public StaticBlockDemo(int value) {
+        System.out.println("Overloaded constructor - value = " + value);
+        num += value;
     }
 //other methods that use the carModels arraylist
 
