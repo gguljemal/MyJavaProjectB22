@@ -9,6 +9,9 @@ public class StaticBlockTest {
         StaticBlockDemo str1 = new StaticBlockDemo(); //----> will print "static initializer block"/ static > constructor
         StaticBlockDemo str2 = new StaticBlockDemo(); //----> will NOT print static, prints ->"constructor method"
         StaticBlockDemo str3 = new StaticBlockDemo(); //--->    prints --> "constructor method"
-        System.out.println(StaticBlockDemo.num);
+        System.out.println(StaticBlockDemo.num);  //25
+        StaticBlockDemo str4 = new StaticBlockDemo(50);
+        System.out.println(StaticBlockDemo.num); //75
+
     }
 }
