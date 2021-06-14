@@ -20,6 +20,7 @@ public class AppObjects {
         b22Discord.setVersion(6.32);
         b22Discord.useTheApp(50);
         b22Discord.download();
+        b22Discord.printInfo();
 
 
     }
