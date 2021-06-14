@@ -5,16 +5,21 @@ public class AppObjects {
     public static void main(String[] args) {
 
         MobileApp mobileApp = new MobileApp();
-        mobileApp.name = "YouTube";
+        mobileApp.setName("YouTube");
         mobileApp.useTheApp(10);
+        mobileApp.download();
 
         Instagram instagram = new Instagram();
-        instagram.name = "Instagram";
+        instagram.setName("Instagram");
+        instagram.setVersion(5.3);
         instagram.useTheApp(20);
+        instagram.download();
 
         Discord b22Discord = new Discord();
-        b22Discord.name = "Discord";
+        b22Discord.setName("Discord");
+        b22Discord.setVersion(6.32);
         b22Discord.useTheApp(50);
+        b22Discord.download();
 
 
     }

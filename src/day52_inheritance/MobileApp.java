@@ -2,12 +2,8 @@ package day52_inheritance;
 
 public class MobileApp {
 
-    String name;
-    double version;
-
-    public void useTheApp(int minutes) {
-        System.out.println("Using " + name + " app for " + minutes + " minutes");
-    }
+    private String name;
+    private double version;
 
     public String getName() {
         return name;
@@ -23,6 +19,14 @@ public class MobileApp {
 
     public void setVersion(double version) {
         this.version = version;
+    }
+
+    protected boolean download(){
+        System.out.println("App: " + name + " version: " + version + " is downloaded");
+        return true;
+    }
+    public void useTheApp(int minutes) {
+        System.out.println("Using " + name + " app for " + minutes + " minutes");
     }
 
 
