@@ -17,5 +17,8 @@ public class B22DiscordServer {
         admin.setRole("Admin");
         System.out.println(admin);
 
+        Admin admin1 = new Admin("Gulia",36975);
+        System.out.println(admin1.toString());
+
     }
 }
