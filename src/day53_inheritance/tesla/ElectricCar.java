@@ -8,6 +8,12 @@ public class ElectricCar {
     private int year;
     private int range;
     private static int count; // all objects will share this variable
+    public static final int MAX_RANGE = 400;
+
+    public final void charge(){
+        System.out.println("Charging the Electric car using plug-in");
+        this.range = MAX_RANGE;
+    }
 
     public static int getCount() {
         return count;
