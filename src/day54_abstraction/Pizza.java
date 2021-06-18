@@ -1,4 +1,14 @@
 package day54_abstraction;
 
-public class Pizza {
+public class Pizza extends MenuItem {
+
+    @Override
+    public void prepare() {
+        System.out.println("Stretch the dough and put toppings and cheese and bake it");
+    }
+
+    public void serve() {
+        System.out.println("serve in plate or in a box");
+    }
+
 }
