@@ -1,5 +1,7 @@
 package day55_abstraction.exercise_example;
 
+import day55_abstraction.exercise_example.Exercise;
+
 public class Running extends Exercise {
 
     @Override
