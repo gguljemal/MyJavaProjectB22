@@ -12,5 +12,13 @@ public class GreetingActions {
         Greeting greeting = new MountainLanguage();
         greeting.bye();
         greeting.hi();
+
+        Japanese japanese = new Japanese();
+        japanese.bye();
+        japanese.hi();
+
+        greeting = new Japanese();
+        greeting.bye();
+        greeting.hi();
     }
 }
