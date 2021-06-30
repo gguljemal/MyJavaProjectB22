@@ -10,6 +10,8 @@ public class Runner {
          InterfaceA iA = new InterfaceA();
          */
 
+        InterfaceA.staticMethodE("wooden spoon");
+        ConcreteA.staticMethodC();
 
     }
 }
