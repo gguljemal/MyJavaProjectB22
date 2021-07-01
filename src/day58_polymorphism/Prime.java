@@ -1,4 +1,6 @@
 package day58_polymorphism;
 
-public class Prime {
+public interface Prime {
+
+    public abstract void primeShipping();
 }
