@@ -2,41 +2,34 @@ package myPractices;
 
 import java.util.*;
 
-public class replPractices {
+class Main {
 
-    public static int[] mergR(int[] a, int[] b) {
+    //create your method below
 
-        int[] nums = new int[a.length + b.length];
+    public static ArrayList<String> removeAll(ArrayList<String> list, String str) {
 
-        for (int i = 0; i < a.length; i++) {
-            for (int each : a) {
-                nums[i] = each;
+        for (int i = 0; i < list.size(); i++) {
+
+            if (list.get(i).contains(str)) {
+                list.remove(list.get(i));
             }
         }
 
-        for (int i = 0; i < b.length; i++) {
-            for (int each : b) {
-                nums[i] = each;
-            }
-        }
+        return list;
+    }
 
-
-        return nums;
-
-    }//end mergR
+    // Do not touch below
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int[] nums = new int[in.nextInt()];
-        int[] nums2 = new int[in.nextInt()];
-        for (int i = 0; i < nums.length; i++) {
-            nums[i] = in.nextInt();
-        }
-        for (int i = 0; i < nums2.length; i++) {
-            nums2[i] = in.nextInt();
+        int size = in.nextInt();
+        String target = in.next();
+        ArrayList<String> list = new ArrayList<>();
+        for (int i = 0; i < size; i++) {
+            list.add(in.next());
         }
 
-        System.out.println(Arrays.toString(mergR(nums, nums2)));
+        System.out.println(removeAll(list, target));
     }
-
 }
+
