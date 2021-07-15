@@ -150,6 +150,7 @@ class IQ_Random_Questions_Mix {
                 "    -> final, finally, finalize?" +
                 "throw vs throws?" +
                 "How are exceptions created and how do they work??");
+        question.add("132.Difference between ArrayList and LinkedList?");
 
         //add more Question in here
 
